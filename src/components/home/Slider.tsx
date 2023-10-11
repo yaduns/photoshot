@@ -7,6 +7,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Slider = () => {
+  //useKeenSlider函数接受两个参数：一个配置对象和一个回调函数数组。
+  //配置对象用于配置滑动区域的外观和行为，设置了滑动区域的每个滑动项的宽度和间距，以及在不同屏幕尺寸下的滑动区域的外观和行为。
+  //回调函数数组用于在滑动区域的不同事件发生时执行一些自定义的逻辑,在滑动区域的不同事件发生时执行一些自定义的逻辑，例如在鼠标悬停在滑动区域上时停止自动滑动，鼠标移开时恢复自动滑动等。
   const [sliderRef] = useKeenSlider(
     {
       slides: {
